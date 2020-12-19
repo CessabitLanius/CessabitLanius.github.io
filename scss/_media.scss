@@ -261,8 +261,8 @@
 
 	.advantages {
 		.progress__text {
-			font-size: 12px;
-			max-width: 160px;
+			font-size: 14px;
+			max-width: 200px;
 		}
 
 		.advantages__cards {
@@ -332,6 +332,12 @@
 	.services {
 		.questions__item {
 			width: 440px;
+
+
+		}
+
+		.questions__item--title {
+			font-size: 18px;
 		}
 	}
 }
@@ -366,6 +372,11 @@
 	}
 
 	.advantages {
+		.progress__wrapper {
+			flex-direction: column;
+			align-items: center;
+		}
+
 		.progress__num {
 			font-size: 35px;
 		}
@@ -388,7 +399,7 @@
 			}
 
 			.card__text {
-				font-size: 10px;
+				font-size: 12px;
 			}
 		}
 	}
@@ -396,6 +407,14 @@
 	.services {
 		.questions__item {
 			width: 400px;
+
+			&--title {
+				padding: 20px 10px 24px 14px;
+			}
+		}
+
+		.questions__item--list {
+			padding: 0px 5px 35px 12px;
 		}
 	}
 }
@@ -406,6 +425,7 @@
 	}
 
 	.advantages {
+
 		.progress__num {
 			font-size: 35px;
 		}
@@ -415,21 +435,21 @@
 		}
 
 		.advantages__cards {
-			grid-template-columns: 2fr 2fr;
+			grid-template-columns: 2fr;
 			row-gap: 10px;
 		}
 
 		.advantages__card {
-			width: 180px;
-			height: 180px;
+			width: 220px;
+			height: 220px;
 
 			svg {
 				width: 60px;
 			}
 
 			.card__text {
-				display: none;
-				font-size: 6px;
+
+				font-size: 12px;
 			}
 		}
 	}
@@ -447,7 +467,25 @@
 
 	}
 
+	.footer {
+		&__menu {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
 }
 
 /* Iphone 5 */
-// @media (max-width: 320px) {}
+@media (max-width: 320px) {
+	.container {
+		max-width: 100%;
+	}
+
+	.services {
+		.questions__item {
+			width: 300px;
+		}
+	}
+
+}
