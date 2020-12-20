@@ -2,9 +2,11 @@
 	display: none;
 }
 
+
 html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	-webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -75,8 +77,4 @@ h6 {
 	color: #fff;
 	z-index: 1;
 
-}
-
-.header__office--list {
-	padding-left: 160px;
 }

@@ -90,13 +90,6 @@
 		margin: 0 auto;
 	}
 
-	.header {
-
-		.menu__link {
-			font-size: 14px;
-		}
-	}
-
 	.advantages {
 		.progress__num {
 			font-size: 40px;
@@ -152,16 +145,6 @@
 		margin: 0 auto;
 	}
 
-	.header {
-		.header__link {
-			min-width: 460px;
-		}
-
-		.menu__link {
-			font-size: 14px;
-		}
-	}
-
 	.main {
 		background-position: top;
 		background-size: cover;
@@ -178,7 +161,6 @@
 		&__card {
 			width: 220px;
 			height: 220px;
-			padding: 10px;
 		}
 	}
 
@@ -231,7 +213,7 @@
 	}
 
 	.container {
-		max-width: 560px;
+		max-width: 550px;
 		margin: 0 auto;
 	}
 
@@ -240,6 +222,21 @@
 	}
 
 	.main {
+		animation: header__animastion 50s infinite alternate-reverse;
+
+
+		@keyframes header__animastion {
+			0% {
+				background-size: 400%;
+				background-position: right;
+			}
+
+			100% {
+				background-size: cover;
+				background-position: bottom;
+			}
+		}
+
 		&__inner {
 			text-align: center;
 		}
@@ -285,7 +282,13 @@
 	.footer {
 		&__menu {
 			display: flex;
-			justify-content: space-evenly;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__adress {
+			max-width: 100%;
 		}
 
 		.footer__items--list {
@@ -293,16 +296,23 @@
 			margin-bottom: 20px;
 		}
 
-		.footer__logo {
-			display: none;
+		.footer__link {
+			font-size: 16px;
+			border-bottom: 1px solid #fff;
 		}
 
 		.footer__social--items {
 			justify-content: center;
 		}
+
+		.footer__title {
+			color: rgb(139, 139, 139);
+			font-size: 14px;
+		}
 	}
 }
 
+/* Phablet */
 @media (max-width: 481px) {
 	.container {
 		max-width: 460px;
@@ -340,8 +350,10 @@
 			font-size: 18px;
 		}
 	}
+
 }
 
+/* Iphone 6/7/8 plus */
 @media (max-width: 415px) {
 
 	.container {
@@ -419,6 +431,8 @@
 	}
 }
 
+
+/* Iphone X/6/7/8*/
 @media (max-width: 376px) {
 	.container {
 		width: 100%;
