@@ -54,51 +54,10 @@
 	background-color: rgb(0, 0, 0);
 }
 
-// .header__burger {
-// 	cursor: pointer;
-// 	position: relative;
-// 	width: 40px;
-// 	height: 25px;
-// 	display: none;
-
-
-// 	.burger__line {
-// 		position: absolute;
-// 		width: 100%;
-// 		height: 5px;
-// 		background-color: rgb(255, 255, 255);
-// 		border-radius: 10px;
-// 		transition: .5s ease-out;
-// 	}
-
-// 	.burger__line--top {
-// 		top: 0;
-// 		left: 0;
-// 	}
-
-// 	.burger__line--middle {
-// 		top: 50%;
-// 		right: 0;
-// 		transform: translateY(-50%);
-
-// 	}
-
-// 	.burger__line--bottom {
-// 		bottom: 0;
-// 		left: 0;
-// 	}
-
-// 	&:hover .burger__line--middle {
-// 		width: 80%;
-// 		right: -7px;
-// 	}
-// }
-
-
 .main {
 	position: relative;
 	height: 100vh;
-	background: url(../img/header_bg.jpg) no-repeat top;
+	background: url(../img/header_bg-min.jpg) no-repeat top;
 	background-size: 100%;
 	animation: header__animastion 23s infinite alternate-reverse;
 	z-index: 12;
@@ -161,17 +120,6 @@
 			}
 		}
 	}
-
-	// @keyframes header__animastion {
-	// 	0% {
-	// 		background-size: 100%;
-	// 	}
-
-	// 	100% {
-	// 		background-size: 110%;
-	// 		background-position: left;
-	// 	}
-	// }
 }
 
 .main__inner {
@@ -334,7 +282,7 @@
 		overflow: hidden;
 		width: 797px;
 		height: 798px;
-		background: url(../img/giammarco-boscaro-1.jpg) no-repeat center;
+		background: url(../img/giammarco-boscaro-1-min.jpg) no-repeat center;
 		background-size: 130%;
 		animation: shrink__right 30s infinite alternate-reverse;
 		padding: 5px;
@@ -380,7 +328,7 @@
 		// position: relative;
 		width: 603px;
 		height: 798px;
-		background: url(../img/giammarco-boscaro-2.jpg)center no-repeat;
+		background: url(../img/giammarco-boscaro-2-min.jpg)center no-repeat;
 		background-size: cover;
 		animation: shrink__left 30s infinite alternate-reverse;
 
